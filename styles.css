@@ -65,7 +65,7 @@ button:hover, #stop:hover, #reset:hover {
   font-size: 50px;
   left: 50%;
   transform: translate(-50%, 0);
-  top: 30%
+  top: 250px;
 }
 
 .finish{
