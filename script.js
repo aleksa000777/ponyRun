@@ -5,7 +5,7 @@ window.addEventListener("keydown", function(e) {
     }
 }, false);
 
-$(window).bind(“load”, function() {
+$(window).bind('load', function() {
   main();
 });
 
