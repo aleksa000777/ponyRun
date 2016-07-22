@@ -72,6 +72,8 @@ var sec = 0;
 var intervalID;
 var on = null;
 var height = 20000;
+var temp = 20;
+var startimg = 1;
 
 function start(){
     if(!on){
@@ -127,8 +129,23 @@ function pad(n) {
 
 
 function pony(pos){
+  console.log('pos',pos);
+  if(pos - temp > 30){
+    temp=pos;
+    console.log('temp',temp);
+    console.log('here');
+    if(startimg < 8){
+      $("#pony img").attr('src',''+startimg+'.png');
+      startimg++;
+    }
+    else{
+      startimg = 1;
+      $("#pony img").attr('src',''+startimg+'.png');
+    }
+  }
+
   var width = $( window ).width() - 200;
   var move = Math.floor((pos * width)/($(document).height()));
     $("#pony").css({left: ""+move+"px"});
-    $("#pony img").attr('src','ponyRun.gif');
+    // $("#pony img").attr('src','ponyRun.gif');
 }
