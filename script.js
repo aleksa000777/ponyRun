@@ -131,7 +131,7 @@ function pad(n) {
 
 function pony(pos){
   console.log('pos',pos);
-  if(pos - temp > 30){
+  if(pos - temp > 80){
     temp=pos;
     console.log('temp',temp);
     console.log('here');
