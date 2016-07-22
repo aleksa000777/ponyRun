@@ -5,9 +5,10 @@ window.addEventListener("keydown", function(e) {
     }
 }, false);
 
-$(document).ready(function(){
+$(window).bind(“load”, function() {
   main();
-})
+});
+
 
 $(window).on('beforeunload', function(){
   $(window).scrollTop(0);
@@ -147,5 +148,4 @@ function pony(pos){
   var width = $( window ).width() - 200;
   var move = Math.floor((pos * width)/($(document).height()));
     $("#pony").css({left: ""+move+"px"});
-    // $("#pony img").attr('src','ponyRun.gif');
 }
