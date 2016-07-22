@@ -1,8 +1,8 @@
 window.addEventListener("keydown", function(e) {
     // space and arrow keys
-    // if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
         e.preventDefault();
-    // }
+    }
 }, false);
 
 $(document).ready(function(){
@@ -71,7 +71,7 @@ var min = 0;
 var sec = 0;
 var intervalID;
 var on = null;
-var height = 30000;
+var height = 20000;
 
 function start(){
     if(!on){
@@ -128,9 +128,7 @@ function pad(n) {
 
 function pony(pos){
   var width = $( window ).width() - 200;
-  console.log(width);
   var move = Math.floor((pos * width)/($(document).height()));
-  console.log(move);
     $("#pony").css({left: ""+move+"px"});
     $("#pony img").attr('src','ponyRun.gif');
 }

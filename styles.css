@@ -6,6 +6,9 @@ body {
   text-align: center;
   font-family: monospace;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 #stopwatch {
   width: 300px;
