@@ -43,7 +43,7 @@ function scrollIt(){
       if(pos > end){
         finish();
         $('.finish').css('display','inline-block');
-        $('.field').css('background-color', 'rgb('+random()+','+random()+','+random()+')');
+        $('.field').css('background-color', 'rgb(255,255,255)');
         $('.field').css('height', $(window).height());
       }
 
