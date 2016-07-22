@@ -116,6 +116,7 @@ function reset(){
     $('.field').css('background-color', 'rgb(255,255,255)');
     $("#pony").css({left: '10px'});
     $("#pony img").attr('src','ponyStay.png');
+    temp = 20;
 
   })
 }
